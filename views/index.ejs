@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:900,800,700,600,500,400,300&subset=latin,cyrillic-ext,cyrillic,latin-ext" />
+    <link rel="stylesheet" href="css/stylesheets.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Convert your files</h1>
+        <form class="form" action="/converter" method="post" enctype="multipart/form-data">
+            <div class="uploader__wrapper">
+                <input type="file" id="myFile" name="uploaded_file" required>
+                <!-- <label for="myFile">Choose file</label> -->
+            </div>
+            <div class="button">
+                <button type="submit" id="download" class="btn">Convert</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

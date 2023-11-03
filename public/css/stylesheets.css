@@ -1,0 +1,125 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.title {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.button {
+    text-align: center;
+}
+
+.btn {
+    width: 200px;
+    background: none;
+    border: none;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(9, 163, 68);
+    color: white;
+    border-radius: 10px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+
+
+.btn:hover {
+    background-color: white;
+    color: rgb(9, 163, 68);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.uploader__wrapper {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* .uploader__wrapper label {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    transition: all .2s ease;
+    cursor: pointer;
+    text-align: center;
+} */
+
+input[type=file]::file-selector-button {
+    border: none;
+    background: darkblue;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: rgba(0, 0, 139, 0.726);
+}
+
+.uploader__wrapper label:hover {
+    background-color: white;
+    color: darkblue;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.link {
+    width: 400px;
+    background: none;
+    border: none;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(9, 163, 68);
+    color: white;
+    border-radius: 10px;
+    transition: all .2s ease;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.link:hover {
+    background-color: white;
+    color: rgb(9, 163, 68);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
