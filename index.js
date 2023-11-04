@@ -27,6 +27,7 @@ app.get('/', function (req, res) {
 app.post('/converter', upload.single('uploaded_file'), function (req, response) {
     let filedata = req.file;
     let fileExt = path.parse(filedata.originalname).ext.slice(1)
+    let fileName = path.parse(filedata.originalname).name;
 
     let key = () => {
         var key = '';
@@ -48,7 +49,7 @@ app.post('/converter', upload.single('uploaded_file'), function (req, response) 
         "filetype": fileExt,
         "key": key(),
         "outputtype": 'pdf',
-        "title": `${filedata.originalname}`,
+        "title": `${fileName}.pdf`,
         "url": `http://localhost:3000/uploads/${filedata.filename}`
     }
 
